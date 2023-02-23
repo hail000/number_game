@@ -1,0 +1,43 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    background: url(cube.jpg) no-repeat center;
+    background-size: covers;
+}
+
+body::before{
+    content: "";
+    position: absolute; z-index: 1;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(0, 0, 0, .7)
+}
+
+.game_main{
+    position: relative ; z-index:2;
+    color: white;
+    text-align: center;
+}
+.game_main h1{
+    font-size: 40px;
+}
+
+.game_main input{
+    text-align: center;
+    width: 100%;
+    padding: 10px 5px 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 18px; color: white;
+    outline: none;
+}
+.game_main button{
+    width: 50%; height: 35px;
+    font-size: 20px;
+    border-radius: 25px;
+
+}
